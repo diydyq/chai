@@ -9191,7 +9191,7 @@ function AssertionError (message, _props, ssf) {
   }
 
   // capture stack trace
-  ssf = ssf || arguments.callee;
+  // ssf = ssf || arguments.callee;
   if (ssf && Error.captureStackTrace) {
     Error.captureStackTrace(this, ssf);
   } else {
